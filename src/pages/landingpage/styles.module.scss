@@ -16,7 +16,8 @@
   position: relative;
   padding-top: 100px;
   z-index: 1;
-  background-color: rgb(0, 0, 0);
+  background-size: cover;
+  // background-color: rgb(0, 0, 0);
 }
 
 .main {
@@ -25,7 +26,8 @@
   display: flex;
   align-items: center;
   margin-bottom: 136px;
-  background-color: rgb(0, 0, 0);
+  // background-color: rgb(0, 0, 0);
+ 
 }
 
 .mainLeft {
@@ -262,7 +264,7 @@
   justify-content: space-between;
 
   &.extraCard {
-    background-color: #1969ff;
+    background-color: #000000;
 
     .cardLabel {
       color: #fff;
@@ -289,7 +291,7 @@
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background-color: #1969ff;
+  background-color: #008f6e;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -309,7 +311,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #1969ff;
+  background-color: #000000;
 }
 
 .logo {

@@ -25,22 +25,22 @@ export const Categories = [
   {
     id: 0,
     icon: iconArt,
-    label: 'Art',
+    label: 'VersaGames',
   },
   {
     id: 1,
     icon: iconCollectibles,
-    label: 'Collectibles',
+    label: 'Verified Games',
   },
   {
     id: 2,
     icon: iconSports,
-    label: 'Sports',
+    label: 'Games',
   },
   {
     id: 3,
     icon: iconUtility,
-    label: 'Utility',
+    label: 'NFTs',
   },
   {
     id: 4,
@@ -50,7 +50,7 @@ export const Categories = [
   {
     id: 5,
     icon: iconVirtual,
-    label: 'Virtual Worlds',
+    label: 'Promotion',
   },
   {
     id: 6,

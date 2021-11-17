@@ -11,13 +11,14 @@ import HeaderActions from 'actions/header.actions';
 import FilterActions from 'actions/filter.actions';
 import Header from 'components/header';
 
-import logo from 'assets/svgs/logo_white.svg';
-import fantomLogo from 'assets/svgs/fantom_logo_white.svg';
+// import logo from 'assets/svgs/logo_white.svg';
+// import fantomLogo from 'assets/svgs/fantom_logo_white.svg';
 import card1 from 'assets/svgs/card1.svg';
 import card2 from 'assets/svgs/card2.svg';
 import card3 from 'assets/svgs/card3.svg';
 import card4 from 'assets/svgs/card4.svg';
 import search from 'assets/svgs/magnifier.svg';
+import background from 'assets/imgs/bodyBackground.jpg';
 
 import styles from './styles.module.scss';
 
@@ -31,23 +32,23 @@ const cards = [
   },
   {
     icon: card2,
-    title: 'Super Fast',
+    title: 'Multichain Service',
     description:
-      'Since Artion runs on the Fantom Opera Network, transactions are usually confirmed within 1-2 seconds.',
+      'Due to the nature of the marketplace it can run on any chain we provide service for to allow users to get the best experience',
     path: '/',
   },
   {
     icon: card3,
-    title: 'Low Transaction Fees',
+    title: 'Transaction Optimization',
     description:
-      'Transactions are usually just a few cents, allowing users to create and trade many NFTs without prohibitively high network fees.',
+      'The marketplace is designed to reduce transactions as much as possible and make it as cost-friendly to our users as possible',
     path: '/',
   },
   {
     icon: card4,
-    title: 'Zero Platform Fees',
+    title: 'Maximum Security',
     description:
-      'Trade NFTs via auction or direct offer without any fees taken by Artion.',
+      'The Versagames marketplace authenticates game collections and NFTs so users can avoid scams.',
     path: '/explore',
   },
 ];
@@ -99,20 +100,22 @@ const LandingPage = () => {
   return (
     <div className={styles.container}>
       <Header />
-      <div className={styles.body}>
+      <div
+        className={styles.body}
+        style={{ backgroundImage: `url(${background})` }}
+      >
         <div className={styles.main}>
           <div className={styles.mainLeft}>
             <div
               className={styles.title}
               style={{ color: '#FFF' }}
-            >{`Trade without platform fees on Artion`}</div>
+            >{`Welcome to the VersaGames Marketplace`}</div>
             <div className={styles.subtitle}>
-              Artion is an NFT marketplace built on Fantom. Create and trade
-              NFTs instantly with low network costs.
+              Explore the extensive VersaGames Marketplace!
             </div>
             <div className={styles.subtitle}>
               <strong>
-                Warning: This is a beta version. Use at your own caution.
+                Warning: VersaGames Marketplace is still in MVP stage.
               </strong>
             </div>
 
@@ -153,7 +156,7 @@ const LandingPage = () => {
       </div>
       <div className={styles.about}>
         <div className={styles.aboutInner}>
-          <div className={styles.aboutTitle}>Why Artion</div>
+          <div className={styles.aboutTitle}>VersaGames Marketplace</div>
           <div className={styles.aboutCards}>
             {cards.map((card, key) =>
               renderAboutCard(
@@ -175,7 +178,7 @@ const LandingPage = () => {
         </div>
       </div>
       <div className={styles.footer}>
-        <img src={logo} alt="logo" className={styles.logo} />
+        {/* <img src={logo} alt="logo" className={styles.logo} /> */}
         <a
           style={{ textDecoration: 'none', color: '#FFFFFF' }}
           target="_blank"
@@ -200,14 +203,14 @@ const LandingPage = () => {
         >
           Terms of Service
         </a>
-        <a
+        {/* <a
           href="https://fantom.foundation/"
           target="_blank"
           rel="noopener noreferrer
             noreferrer"
         >
           <img src={fantomLogo} alt="fantom-logo" className={styles.logo} />
-        </a>
+        </a> */}
       </div>
     </div>
   );
