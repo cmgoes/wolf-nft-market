@@ -4,7 +4,7 @@ import { NavLink, useHistory } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import cx from 'classnames';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
-import ReactPlayer from 'react-player';
+// import ReactPlayer from 'react-player';
 
 import { Categories } from 'constants/filter.constants';
 import HeaderActions from 'actions/header.actions';
@@ -125,11 +125,12 @@ const LandingPage = () => {
           </div>
           <div className={styles.card}>
             <div className={styles.cardMedia}>
-              <ReactPlayer
+              {/* <ReactPlayer
                 className={styles.player}
                 url={`https://artion.mypinata.cloud/ipfs/QmNjxsiHzRVhbL1WYhxXhJsHCRgCA2bx6LtUJHVmAd3Kir`}
                 controls={true}
-              />
+              /> */}
+              <div className={styles.player}></div>
             </div>
             <div
               style={{
@@ -137,11 +138,12 @@ const LandingPage = () => {
                 flexDirection: 'row',
                 justifyContent: 'space-between',
                 alignItems: 'center',
+                paddingBottom: '16px',
               }}
             >
               <div className={styles.cardInfo}>
-                <div className={styles.cardCategory}>Shamanka: The Healer</div>
-                <div className={styles.cardName}>{'World of Umans'}</div>
+                <div className={styles.cardCategory}>NFT name</div>
+                <div className={styles.cardName}>{'NFT Collection'}</div>
               </div>
               <Link
                 to="/explore/0x972dd206a7c2d4ae46db1db700bc79de1bc59960/0"

@@ -1,10 +1,11 @@
-import iconArt from 'assets/svgs/rainbow.svg';
-import iconCollectibles from 'assets/svgs/bear.svg';
-import iconSports from 'assets/svgs/soccerball.svg';
-import iconUtility from 'assets/svgs/tools.svg';
-import iconTrading from 'assets/svgs/cardboard.svg';
-import iconVirtual from 'assets/svgs/monster.svg';
-import iconDomain from 'assets/svgs/domain.svg';
+// import iconArt from 'assets/svgs/rainbow.svg';
+// import iconCollectibles from 'assets/svgs/bear.svg';
+// import iconSports from 'assets/svgs/soccerball.svg';
+// import iconUtility from 'assets/svgs/tools.svg';
+// import iconTrading from 'assets/svgs/cardboard.svg';
+// import iconVirtual from 'assets/svgs/monster.svg';
+// import iconDomain from 'assets/svgs/domain.svg';
+import iconSearch from 'assets/svgs/magnifier.svg';
 
 export const GroupFilters = [
   {
@@ -24,37 +25,37 @@ export const GroupFilters = [
 export const Categories = [
   {
     id: 0,
-    icon: iconArt,
+    icon: iconSearch,
     label: 'VersaGames',
   },
   {
     id: 1,
-    icon: iconCollectibles,
+    icon: iconSearch,
     label: 'Verified Games',
   },
   {
     id: 2,
-    icon: iconSports,
+    icon: iconSearch,
     label: 'Games',
   },
   {
     id: 3,
-    icon: iconUtility,
+    icon: iconSearch,
     label: 'NFTs',
   },
   {
     id: 4,
-    icon: iconTrading,
+    icon: iconSearch,
     label: 'Trading Cards',
   },
   {
     id: 5,
-    icon: iconVirtual,
+    icon: iconSearch,
     label: 'Promotion',
   },
   {
     id: 6,
-    icon: iconDomain,
+    icon: iconSearch,
     label: 'Domain Names',
   },
 ];
